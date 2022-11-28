@@ -1,0 +1,21 @@
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  background-image: linear-gradient(
+    to right top,
+    #e4497e,
+    #da3f98,
+    #c441b5,
+    #9d4cd1,
+    #565be9
+  );
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

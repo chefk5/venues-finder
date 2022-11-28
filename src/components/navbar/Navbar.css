@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  color: #dedede;
+  margin-left: 50px;
+}
+h5 {
+  color: #dedede;
+  margin-right: 50px;
+}

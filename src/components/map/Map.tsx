@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect, useCallback } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import {
   GoogleMap,
   useJsApiLoader,
@@ -7,7 +7,7 @@ import {
   InfoWindowF,
 } from '@react-google-maps/api';
 import './Map.css';
-import Gallery from '../gallery/Gallery';
+import { Gallery } from '../gallery';
 import { get } from '../../api';
 import { fetchVenuesPicsURL, fetchVenuesURL } from '../../api/urls';
 
@@ -36,7 +36,6 @@ type MarkerType = google.maps.Marker;
 
 function Map() {
   const [venues, setVenues] = useState([]);
-  // const [map, setMap] = useState<MapType | null>(null);
   const [activeMarker, setActiveMarker] = useState<MarkerType | null>(null);
   const [pics, setPics] = useState<ResponsePicsType[]>([]);
   const [error, setError] = useState<boolean>(false);
